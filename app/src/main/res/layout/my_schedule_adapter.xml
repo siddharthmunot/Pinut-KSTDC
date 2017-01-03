@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="5dp"
+        card_view:cardMaxElevation="5dp"
+        android:layout_gravity="center"
+         android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        card_view:paddingStart="8dp"
+        card_view:paddingEnd="8dp"
+        android:fitsSystemWindows="true"
+
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        >
+ ">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+             <!--   <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                     android:clickable="true"
+                    android:layout_gravity="left"
+                    />
+-->
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/time"/>
+
+
+
+                <TextView
+                    android:id="@+id/venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                     android:gravity="center"
+
+                    android:layout_toRightOf="@+id/time"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/view"
+                    android:layout_toRightOf="@+id/time"
+                    android:layout_below="@+id/venue"
+                    android:background="@color/pink"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:layout_below="@+id/venue"
+                    android:layout_toRightOf="@+id/time"
+                    android:id="@+id/description"/>
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_below="@+id/description"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:id="@+id/previous_cost"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/description"
+
+                    android:layout_toRightOf="@+id/previous_cost"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000"
+                    android:id="@+id/new_cost"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exp_date"
+                    android:layout_below="@+id/previous_cost"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_marginLeft="10dp"
+                    android:text="Date of Expiray:"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_toRightOf="@+id/exp_date"
+                    android:layout_below="@+id/new_cost"
+                    android:layout_marginLeft="10dp"/>
+
+-->
+
+
+
+            </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_weight="4"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    card_view:contentPaddingLeft="3dp"
+                    card_view:contentPaddingRight="3dp"
+                    card_view:contentPaddingTop="3dp"
+                    card_view:contentPaddingBottom="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/movies"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/computer_skills"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                             android:textSize="20sp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+ android:textAppearance="@raw/alegreyascregular"
+                               android:text="Movies"
+                            android:id="@+id/textView2" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:contentPaddingLeft="3dp"
+                    card_view:contentPaddingRight="3dp"
+                    card_view:contentPaddingTop="3dp"
+                    card_view:contentPaddingBottom="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/short_movies"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/english_education"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                              android:textSize="20sp"
+                            android:gravity="center"
+                            android:textAppearance="@raw/alegreyascregular"
+                            android:layout_marginTop="10dp"
+                            android:text="Short Movies"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    card_view:contentPaddingLeft="3dp"
+                    card_view:contentPaddingRight="3dp"
+                    card_view:contentPaddingTop="3dp"
+                    card_view:contentPaddingBottom="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:id="@+id/vocational_skills"
+                            android:src="@drawable/animated"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                              android:textSize="20sp"
+                            android:gravity="center"
+                            android:textAppearance="@raw/alegreyascregular"
+                            android:layout_marginTop="10dp"
+                            android:text="Animated"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:contentPaddingLeft="3dp"
+                    card_view:contentPaddingRight="3dp"
+                    card_view:contentPaddingTop="3dp"
+                    card_view:contentPaddingBottom="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/kid_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/fishing_and_farming"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textAppearance="@raw/alegreyascregular"
+                            android:layout_marginTop="10dp"
+                            android:text="Kids Content"
+                            android:id="@+id/textView" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    card_view:contentPaddingLeft="3dp"
+                    card_view:contentPaddingRight="3dp"
+                    card_view:contentPaddingTop="3dp"
+                    card_view:contentPaddingBottom="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/kstdc"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/oriyacontent"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textAppearance="@raw/alegreyascregular"
+                            android:text="KSTDC"
+                            android:id="@+id/textView4" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    card_view:cardElevation="3dp"
+                    card_view:cardMaxElevation="3dp"
+                    card_view:contentPaddingLeft="3dp"
+                    card_view:contentPaddingRight="3dp"
+                    card_view:contentPaddingTop="3dp"
+                    card_view:contentPaddingBottom="3dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/wikipedia"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/wikipedia"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textAppearance="@raw/alegreyascregular"
+                            android:text="Wikipedia"
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

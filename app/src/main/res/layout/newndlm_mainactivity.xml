@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <include layout="@layout/toolbar_default" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardElevation="5dp"
+                card_view:cardMaxElevation="2dp"
+                card_view:contentPaddingLeft="-3dp"
+                card_view:contentPaddingRight="-3dp"
+                card_view:contentPaddingTop="-3dp"
+                card_view:contentPaddingBottom="-3dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true"
+                android:fitsSystemWindows="true"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!--<ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="@drawable/gradient_bg_iv"
+                                android:alpha="0.4"
+                                android:clickable="true"
+                                android:scaleType="fitXY" />-->
+
+
+                            <ImageView
+                                android:id="@+id/thumbnail"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/golden_chariote1"
+                                android:scaleType="fitXY" />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.7"
+                                android:layout_gravity="bottom"
+                                android:text="Trip Assistant"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:background="@drawable/customstriphollow"
+                                android:textColor="#ffffff"
+                                android:id="@+id/btn1"/>
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/album_title" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:layout_below="@+id/title"
+                            android:textSize="13sp"
+                            android:id="@+id/location"/>
+
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardElevation="5dp"
+                card_view:cardMaxElevation="5dp"
+                card_view:contentPaddingLeft="-3dp"
+                card_view:contentPaddingRight="-3dp"
+                card_view:contentPaddingTop="-3dp"
+                card_view:contentPaddingBottom="-3dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/thumbnail1"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/entertainment"
+                                android:scaleType="fitXY" />
+                         <!--   <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="@drawable/gradient_bg_iv"
+                                android:alpha="0.4"
+                                android:clickable="true"
+                                android:scaleType="fitXY" />-->
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:layout_gravity="bottom"
+                        android:text="Entertainment"
+                        android:textSize="16sp"
+                        android:background="@drawable/customstriphollow"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:id="@+id/btn"/>
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/album_title" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:layout_below="@+id/title1"
+                            android:textSize="13sp"
+                            android:id="@+id/location1"/>
+
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardElevation="5dp"
+                card_view:cardMaxElevation="5dp"
+                card_view:contentPaddingLeft="-3dp"
+                card_view:contentPaddingRight="-3dp"
+                card_view:contentPaddingTop="-3dp"
+                card_view:contentPaddingBottom="-3dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/thumbnail2"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/feedback"
+                                android:scaleType="fitXY" />
+                          <!--  <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="@drawable/gradient_bg_iv"
+                                android:alpha="0.4"
+                                android:clickable="true"
+                                android:scaleType="fitXY" />-->
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.5"
+                                android:layout_gravity="bottom"
+                                android:text="FeedBack"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:background="@drawable/customstriphollow"
+                                 android:id="@+id/btn2"/>
+
+                        </FrameLayout>
+
+
+                        <TextView
+                            android:id="@+id/title2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/album_title" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:layout_below="@+id/title2"
+                            android:textSize="13sp"
+                            android:id="@+id/location2"/>
+
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+   </ScrollView>
+</LinearLayout>
+
